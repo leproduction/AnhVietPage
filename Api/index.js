@@ -4,13 +4,11 @@ const cors = require('cors')
 const RegisterModel = require('./Register.js')
 
 const app = express()
-app.use(cors(
-    {
-        origin: ["https://anh-viet-page.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
+app.use(cors({
+    origin: ["http://localhost:3000"],
+    methods: ["POST", "GET"],
+    credentials: true
+}));
 app.use(express.json())
 mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?retryWrites=true&w=majority')
     .then(() => {
