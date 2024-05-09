@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Form, Row } from 'react-bootstrap';
 import axios from 'axios';
@@ -10,7 +10,9 @@ export default function LandingPage() {
   const [toggle,setToggle]= useState(true);
   const [info, setInfo]= useState("");
   const [note, setNote] = useState('')
-  axios.defaults.withCredentials = true;
+ useEffect(() => {
+    axios.defaults.withCredentials = true;
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
