@@ -7,7 +7,7 @@ export default function LandingPage() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [tel, setTel] = useState('');
-  const [toggle,setToggle]= useState(true);
+  const [toggle, setToggle]= useState(true);
   const [info, setInfo]= useState("");
   const [note, setNote] = useState('')
  useEffect(() => {
