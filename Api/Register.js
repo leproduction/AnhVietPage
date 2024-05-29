@@ -11,9 +11,7 @@ const registerSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    note: {
-        type: String
-    }
+    note: string
 });
 
 const RegisterModel = mongoose.model('Register', registerSchema);
