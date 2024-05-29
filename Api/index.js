@@ -13,10 +13,7 @@ app.use(cors({
 
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?retryWrites=true&w=majority', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?retryWrites=true&w=majority')
 .then(() => {
     console.log("Connected to MongoDB successfully");
 })
