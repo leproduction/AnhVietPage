@@ -19,7 +19,7 @@ export default function LandingPage() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3001/submit', {
+      const response = await axios.post('https://anh-viet-page-gx18.vercel.app/submit', {
         name,
         email,
         tel,
