@@ -10,7 +10,7 @@ app.use(cors({
     credentials: true
 }));
 app.use(express.json())
-mongoose.connect('mongodb+srv://anhvietproject:port@anhvietproject.scc2g3m.mongodb.net/?retryWrites=true&w=majority&appName=AnhVietProject')
+mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?retryWrites=true&w=majority&appName=portfolio')
     .then(() => {
         console.log("Connected to MongoDB successfully");
     })
