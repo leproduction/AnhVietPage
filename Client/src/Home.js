@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card, Container, Row, Col, Form } from 'react-bootstrap';
 import NavBarComponent from './Component/NavBar.js';
 import FooterPage from './Component/Footer.js';
 import ProgressiveBar from './Component/ProgressBar.js';
 import ContactEmer from './Component/Contact.js';
+import {Link} from 'react-router-dom'
+
+import { motion } from 'framer-motion';
 import LandingPage from './LandingPage.js';
 import ReviewPage from './Component/Review.js';
+import Photos from './Component/NailsSearch.js';
 import PeopleCount from './Component/PeopleCount.js';
-
 function Home() {
 
   return (
@@ -37,7 +40,7 @@ function Home() {
         <Card.Text>
         Thành viên được miễn phí dịch vụ phiên dịch 5 lần với số phút và giờ không giới hạn trong tháng đăng ký. Phiên dịch chỉ diễn ra trong giờ làm việc của chúng tôi ngoại trừ các cuộc hẹn trước.
         </Card.Text>
-        <a href='https://buy.stripe.com/4gweYi26PdDqdlC004'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$99</span> Free</Button></a>
+        <a href='https://buy.stripe.com/4gweYi26PdDqdlC004'><Button variant="primary">Free</Button></a>
       </Card.Body>
       </Card>
       <Card style={{ width: '18rem' }} className='mx-auto p-1'>
@@ -85,9 +88,9 @@ function Home() {
 
 
 </Row>
-      <Row className='col-md-12'><Col>Wednesday</Col><Col>By Appoinment</Col></Row>
-      <Row className='col-md-12'><Col>Thursday</Col>	<Col>By Appoinment</Col></Row>
-      <Row className='col-md-12'><Col>Friday	</Col><Col>By Appoinment</Col></Row>
+      <Row className='col-md-12'><Col>Wednesday</Col><Col>	9:00 A.M- 5 P.M</Col></Row>
+      <Row className='col-md-12'><Col>Thursday</Col>	<Col>9:00 A.M- 5 P.M</Col></Row>
+      <Row className='col-md-12'><Col>Friday	</Col><Col>9:00 A.M- 5 P.M</Col></Row>
       <Row className='col-md-12'><Col>Saturday</Col>	<Col>By Appoinment</Col></Row>
       <Row className='col-md-12'><Col>Sunday	</Col><Col>By Appoinment</Col></Row>
      </Row >
@@ -102,4 +105,4 @@ function Home() {
   );
 }
 
-export default Home
+export default Home;
