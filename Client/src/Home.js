@@ -88,9 +88,9 @@ function Home() {
 
 
 </Row>
-      <Row className='col-md-12'><Col>Wednesday</Col><Col>	9:00 A.M- 5 P.M</Col></Row>
-      <Row className='col-md-12'><Col>Thursday</Col>	<Col>9:00 A.M- 5 P.M</Col></Row>
-      <Row className='col-md-12'><Col>Friday	</Col><Col>9:00 A.M- 5 P.M</Col></Row>
+      <Row className='col-md-12'><Col>Wednesday</Col><Col>By Appoinment</Col></Row>
+      <Row className='col-md-12'><Col>Thursday</Col>	<Col>By Appoinment</Col></Row>
+      <Row className='col-md-12'><Col>Friday	</Col><Col>By Appoinment</Col></Row>
       <Row className='col-md-12'><Col>Saturday</Col>	<Col>By Appoinment</Col></Row>
       <Row className='col-md-12'><Col>Sunday	</Col><Col>By Appoinment</Col></Row>
      </Row >
