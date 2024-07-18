@@ -40,7 +40,7 @@ function Home() {
         <Card.Text>
         Thành viên được miễn phí dịch vụ phiên dịch 5 lần với số phút và giờ không giới hạn trong tháng đăng ký. Phiên dịch chỉ diễn ra trong giờ làm việc của chúng tôi ngoại trừ các cuộc hẹn trước.
         </Card.Text>
-        <a href='https://buy.stripe.com/4gweYi26PdDqdlC004'><Button variant="primary">Free</Button></a>
+        <a href='https://buy.stripe.com/4gweYi26PdDqdlC004'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$599</span>Free</Button></a>
       </Card.Body>
       </Card>
       <Card style={{ width: '18rem' }} className='mx-auto p-1'>
@@ -81,16 +81,16 @@ function Home() {
 
      <Row sm={1} md={1} className='mx-auto'>
       <Row className='col-md-12'><Col> Business Hours </Col></Row>
-      <Row className='col-md-12'><Col>Monday	</Col><Col>9:00 A.M- 5 P.M</Col></Row>
-      <Row className='col-md-12'><Col>Tuesday</Col><Col>	9:00 A.M- 5 P.M</Col>
+      <Row className='col-md-12'><Col>Monday	</Col><Col>By Appoinment</Col></Row>
+      <Row className='col-md-12'><Col>Tuesday</Col><Col>By Appoinment</Col>
 
 
 
 
 </Row>
-      <Row className='col-md-12'><Col>Wednesday</Col><Col>	9:00 A.M- 5 P.M</Col></Row>
-      <Row className='col-md-12'><Col>Thursday</Col>	<Col>9:00 A.M- 5 P.M</Col></Row>
-      <Row className='col-md-12'><Col>Friday	</Col><Col>9:00 A.M- 5 P.M</Col></Row>
+      <Row className='col-md-12'><Col>Wednesday</Col><Col>By Appoinment</Col></Row>
+      <Row className='col-md-12'><Col>Thursday</Col>	<Col>By Appoinment</Col></Row>
+      <Row className='col-md-12'><Col>Friday	</Col><Col>By Appoinment</Col></Row>
       <Row className='col-md-12'><Col>Saturday</Col>	<Col>By Appoinment</Col></Row>
       <Row className='col-md-12'><Col>Sunday	</Col><Col>By Appoinment</Col></Row>
      </Row >
