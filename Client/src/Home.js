@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card, Container, Row, Col, Form } from 'react-bootstrap';
 import NavBarComponent from './Component/NavBar.js';
 import FooterPage from './Component/Footer.js';
 import ProgressiveBar from './Component/ProgressBar.js';
 import ContactEmer from './Component/Contact.js';
-import {Link} from 'react-router-dom'
-
-import { motion } from 'framer-motion';
 import LandingPage from './LandingPage.js';
 import ReviewPage from './Component/Review.js';
-import Photos from './Component/NailsSearch.js';
 import PeopleCount from './Component/PeopleCount.js';
+
 function Home() {
 
   return (
