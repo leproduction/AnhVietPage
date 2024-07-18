@@ -38,7 +38,7 @@ export default function LandingPage() {
 
     setName('');
     setEmail('');
-    setTel(');
+    setTel('');
     setNote('');
   };
 
