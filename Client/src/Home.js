@@ -61,7 +61,7 @@ function Home() {
         <Card.Text>
         Thành viên được nhận dịch vụ phiên dịch miễn phí với số phút và giờ không giới hạn trong thời gian đăng ký 1 năm. Phiên dịch chỉ diễn ra trong giờ làm việc của chúng tôi ngoại trừ các cuộc hẹn trước.
         </Card.Text>
-        <a href='https://buy.stripe.com/aEUaI26n5are0yQbIK'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$1200</span>$799</Button></a>
+        <a href='https://buy.stripe.com/aEUaI26n5are0yQbIK'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$1200</span>$899</Button></a>
       </Card.Body>
       </Card>
 
