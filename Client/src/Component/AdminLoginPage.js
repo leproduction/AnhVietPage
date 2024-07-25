@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown, Container, Image, Row, Col, Button, Modal, Fo
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Nails from './AV-interpreters.png';
 import { MyContext } from './MyContext';
-import GoogleLoginComponent from './GoogleLoginComponent';
+
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import AdminManagementPage from './adminManagement';
