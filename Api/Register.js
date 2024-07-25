@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+<<<<<<< HEAD
 const bcrypt = require('bcrypt');
 
 
@@ -16,11 +17,21 @@ const registerSchema = new mongoose.Schema({
         lowercase: true,
 
 
+=======
+
+const registerSchema = new mongoose.Schema({
+    name: String,
+    email: {
+        type: String,
+        unique: true, // Ensures email is unique in the database
+        required: true
+>>>>>>> origin/main
     },
     tel: {
         type: Number,
         required: true
     },
+<<<<<<< HEAD
     note: {
         type: String,
         trim: true
@@ -52,6 +63,11 @@ registerSchema.pre('save', async function(next) {
 });
 
 
+=======
+    note: String
+});
+
+>>>>>>> origin/main
 const RegisterModel = mongoose.model('Register', registerSchema);
 
 module.exports = RegisterModel;

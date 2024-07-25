@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext, useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container, Image, Row, Col, Button, Modal, Form, Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -44,13 +45,25 @@ const logOutButton=()=>{
       alert(error);
     }
   };
+=======
+import React from 'react';
+import { Navbar, Nav, NavDropdown, Container, Image, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Nails from './AV-interpreters.png';
+
+export default function NavBarComponent() {
+>>>>>>> origin/main
   return (
     <div>
       <Navbar style={{ background: "rgba(189,195,199, 0.2)" }} expand="lg" className="shadow rounded w-100">
         <Container>
           <Navbar.Brand href="#home" className="d-flex align-items-center">
+<<<<<<< HEAD
 
               <Image
+=======
+            <Image
+>>>>>>> origin/main
               src={Nails}
               alt="Nails and Lashes Logo"
               roundedCircle
@@ -67,6 +80,7 @@ const logOutButton=()=>{
                 <NavDropdown.Item href="#">About</NavDropdown.Item>
                 <NavDropdown.Item href="#footer">Contact</NavDropdown.Item>
                 <NavDropdown.Item href="#">Career</NavDropdown.Item>
+<<<<<<< HEAD
                 <NavDropdown.Item href="#"><Button onClick={logOutButton}>Log Out</Button></NavDropdown.Item>
               </NavDropdown>
             </Nav>
@@ -125,6 +139,12 @@ style={{ maxWidth: '50px', maxHeight:"50px", marginRight: '10px' }} // Adjust si
 >
 {console.log(user.name)}
 </Image>Hello User</>)}
+=======
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+
+>>>>>>> origin/main
 
         </Container>
       </Navbar>

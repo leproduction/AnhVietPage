@@ -3,10 +3,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import NoPages from './NoPage';
 import DownloadLinkPage from './DownloadPage';
+<<<<<<< HEAD
 import AdminManagementPage from './Component/adminManagement';
 import BackEnd from './Component/backend';
 import SignUpPage from './Component/SignUp';
 import AdminLoginPage from './Component/AdminLoginPage';
+=======
+>>>>>>> origin/main
 
 const App = () => {
   return (
@@ -17,10 +20,13 @@ const App = () => {
           <Route  path="/home" element={<Home />} />
           <Route  path="/download" element={<DownloadLinkPage />} />
           <Route  path="*" element={<NoPages />} />
+<<<<<<< HEAD
           <Route  path="/management" element={<AdminManagementPage />} />
           <Route  path="/backend" element={<BackEnd />} />
           <Route path="/Signup" element={<SignUpPage/>}/>
           <Route path="/AdminLogin" element={<AdminLoginPage/>}/>
+=======
+>>>>>>> origin/main
         </Routes>
       </BrowserRouter>
 

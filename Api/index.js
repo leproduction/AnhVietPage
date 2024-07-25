@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
+<<<<<<< HEAD
 const RegisterModel = require('./Register')
 const bcrypt = require('bcrypt');
 const app = express()
@@ -12,6 +13,18 @@ app.use(cors({
 
 app.use(express.json())
 mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?retryWrites=true&w=majority')
+=======
+const RegisterModel = require('./Register.js')
+
+const app = express()
+app.use(cors({
+    origin: ["https://anh-viet-page.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+}));
+app.use(express.json())
+mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?retryWrites=true&w=majority&appName=portfolio')
+>>>>>>> origin/main
     .then(() => {
         console.log("Connected to MongoDB successfully");
     })
@@ -34,6 +47,7 @@ app.post('/submit', (req, res) => {
         }
     }).catch(err => res.json(err))
 })
+<<<<<<< HEAD
 app.post('/signup', async (req, res) => {
     const { name, email, tel, password } = req.body;
     console.log("Received signup request:", req.body);
@@ -108,6 +122,8 @@ app.post('/signin', async (req, res) => {
         res.status(500).json("Internal Server Error");
     }
 });
+=======
+>>>>>>> origin/main
 
 
 app.listen(3001, () => {
