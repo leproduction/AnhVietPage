@@ -1,53 +1,44 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
-<<<<<<< HEAD
 const RegisterModel = require('./Register')
 const bcrypt = require('bcrypt');
+
 const app = express()
+
 app.use(cors({
-    origin: ["http://localhost:3000"],
+    origin: ["http://localhost:3000", "https://anh-viet-page.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }));
 
-app.use(express.json())
-mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?retryWrites=true&w=majority')
-=======
-const RegisterModel = require('./Register.js')
-
-const app = express()
-app.use(cors({
-    origin: ["https://anh-viet-page.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
-}));
 app.use(express.json())
 mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?retryWrites=true&w=majority&appName=portfolio')
->>>>>>> origin/main
     .then(() => {
         console.log("Connected to MongoDB successfully");
     })
     .catch((error) => {
         console.error("Network Error", error);
     });
+
 app.get("/", (req, res) => {
     res.json("Information");
 })
+
 app.post('/submit', (req, res) => {
-    const {name, email, tel, note} = req.body;
-    RegisterModel.findOne({email: email})
-    .then(user => {
-        if(user) {
-            res.json("Already submitted")
-        } else {
-            RegisterModel.create({name: name, email: email, tel: tel, note: note})
-            .then(result => res.json(result))
-            .catch(err => res.json(err))
-        }
-    }).catch(err => res.json(err))
+    const { name, email, tel, note } = req.body;
+    RegisterModel.findOne({ email: email })
+        .then(user => {
+            if (user) {
+                res.json("Already submitted")
+            } else {
+                RegisterModel.create({ name: name, email: email, tel: tel, note: note })
+                    .then(result => res.json(result))
+                    .catch(err => res.json(err))
+            }
+        }).catch(err => res.json(err))
 })
-<<<<<<< HEAD
+
 app.post('/signup', async (req, res) => {
     const { name, email, tel, password } = req.body;
     console.log("Received signup request:", req.body);
@@ -68,51 +59,54 @@ app.post('/signup', async (req, res) => {
         return res.status(500).json({ message: "Internal Server Error", error: err.message });
     }
 });
+
 app.post('/signin', async (req, res) => {
     const { email, password } = req.body;
     try {
-      const existingUser = await RegisterModel.findOne({ email: email });
-      if (existingUser) {
-        const matchedPassword = await bcrypt.compare(password, existingUser.password);
-        if (matchedPassword) {
-          console.log("Verified Password");
-          res.status(200).json("Sign in successfully");
+        const existingUser = await RegisterModel.findOne({ email: email });
+        if (existingUser) {
+            const matchedPassword = await bcrypt.compare(password, existingUser.password);
+            if (matchedPassword) {
+                console.log("Verified Password");
+                res.status(200).json("Sign in successfully");
+            } else {
+                console.log("Incorrect Password");
+                res.status(401).json("Incorrect Password");
+            }
         } else {
-          console.log("Incorrect Password");
-          res.status(401).json("Incorrect Password");
+            console.log("User is not Found");
+            res.status(404).json("User is not Found");
         }
-      } else {
-        console.log("User is not Found");
-        res.status(404).json("User is not Found");
-      }
     } catch (error) {
-      console.error(error);
-      res.status(500).json("Internal Server Error");
+        console.error(error);
+        res.status(500).json("Internal Server Error");
     }
-  });
-  app.post('/admin', async (req, res) => {
+});
+
+app.post('/admin', async (req, res) => {
     const { email, password } = req.body;
     try {
-      const existingUser = await RegisterModel.findOne({ email: email });
-      if (existingUser) {
-        const matchedPassword = await bcrypt.compare(password, existingUser.password);
-        if (matchedPassword) {
-          console.log("Verified Password");
-          res.status(200).json("Sign in successfully");
+        const existingUser = await RegisterModel.findOne({ email: email });
+        if (existingUser) {
+            const matchedPassword = await bcrypt.compare(password, existingUser.password);
+            if (matchedPassword) {
+                console.log("Verified Password");
+                res.status(200).json("Sign in successfully");
+            } else {
+                console.log("Incorrect Password");
+                res.status(401).json("Incorrect Password");
+            }
         } else {
-          console.log("Incorrect Password");
-          res.status(401).json("Incorrect Password");
+            console.log("User is not Found");
+            res.status(404).json("User is not Found");
         }
-      } else {
-        console.log("User is not Found");
-        res.status(404).json("User is not Found");
-      }
     } catch (error) {
-      console.error(error);
-      res.status(500).json("Internal Server Error");
+        console.error(error);
+        res.status(500).json("Internal Server Error");
     }
-  });
-  app.get('/users', async (req, res) => {
+});
+
+app.get('/users', async (req, res) => {
     try {
         const users = await RegisterModel.find();
         res.json(users);
@@ -122,10 +116,7 @@ app.post('/signin', async (req, res) => {
         res.status(500).json("Internal Server Error");
     }
 });
-=======
->>>>>>> origin/main
-
 
 app.listen(3001, () => {
     console.log("Server is Running")
-})
+});
