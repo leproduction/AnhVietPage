@@ -73,7 +73,7 @@ function Home() {
 
 <PeopleCount/>
       <Container fluid className="d-flex justify-content-center align-items-center flex-wrap my-2">
-<<<<<<< HEAD
+
 
       </Container>
 
