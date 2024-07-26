@@ -61,16 +61,16 @@ export default function LandingPage() {
       <Form onSubmit={handleSubmit} className=' p-4 rounded' variant="outline-dark mx-auton">
         <Form.Label className='text-dark'>Nếu bạn có bất kỳ câu hỏi nào, vui lòng điền thông tin chi tiết bên dưới, chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất</Form.Label>
         <Form.Group controlId="formName">
-          <Form.Control type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required />
+          <Form.Control type="text" placeholder="Full Name" value={name} id="text1" onChange={(e) => setName(e.target.value)} required />
         </Form.Group>
         <Form.Group controlId="formEmail">
-          <Form.Control type="email" placeholder="example@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <Form.Control type="email" placeholder="example@gmail.com" value={email} id="email1" onChange={(e) => setEmail(e.target.value)} required />
         </Form.Group>
         <Form.Group controlId="formTel">
-          <Form.Control type="tel" pattern='[0-9]{10}' placeholder="954-123-4567" value={tel} onChange={(e) => setTel(e.target.value)} required />
+          <Form.Control type="tel" pattern='[0-9]{10}' placeholder="954-123-4567" value={tel} id="phone1" onChange={(e) => setTel(e.target.value)} required />
         </Form.Group>
         <Form.Group controlId="text">
-          <Form.Control type="text" placeholder="Ghi chú" value={note} onChange={(e) => setNote(e.target.value)} style={{height:"5rem"}} />
+          <Form.Control type="text" placeholder="Ghi chú" value={note} id="note1" onChange={(e) => setNote(e.target.value)} style={{height:"5rem"}} />
         </Form.Group>
         <Button variant="outline-dark" className='my-2' type="submit">Submit</Button>
 
