@@ -59,6 +59,7 @@ export default function SignUpPage() {
           <Form.Group controlId="formName">
             <Form.Control
               type="text"
+            id="text2"
               placeholder="Full Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -68,6 +69,7 @@ export default function SignUpPage() {
           <Form.Group controlId="formEmail">
             <Form.Control
               type="email"
+              id="email2"
               placeholder="example@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -77,6 +79,7 @@ export default function SignUpPage() {
           <Form.Group controlId="formTel">
             <Form.Control
               type="tel"
+              phone="phone2"
               pattern="[0-9]{10}"
               placeholder="954-123-4567"
               value={tel}
@@ -87,12 +90,13 @@ export default function SignUpPage() {
           <Form.Group controlId="text">
             <Form.Control
               type="password"
+              id="password2"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
-          <Button variant="outline-dark" className='my-2' type="submit">Submit</Button>
+          <Button variant="outline-dark" id="submit2" className='my-2' type="submit">Submit</Button>
           <Form.Text className="text-dark mx-1">
             By submitting, you agree to our policy.
           </Form.Text>
