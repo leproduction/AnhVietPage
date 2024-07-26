@@ -6,7 +6,7 @@ const RegisterModel = require('./Register')
 const bcrypt = require('bcrypt');
 const app = express()
 app.use(cors({
-    origin: ["https://anh-viet-page-gx18.vercel.app"],
+    origin: ["http://anh-viet-page-gx18.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }));
