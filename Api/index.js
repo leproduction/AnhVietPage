@@ -120,6 +120,6 @@ app.get('/users', async (req, res) => {
     }
 });
 
-app.listen(3001, () => {
+app.listen("https://anh-viet-page-data.vercel.app", () => {
     console.log("Server is Running on port 3001");
 });
