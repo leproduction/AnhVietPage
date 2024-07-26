@@ -86,13 +86,13 @@ const logOutButton=()=>{
         <Form.Label className='text-dark'>Sign In</Form.Label>
 
         <Form.Group controlId="formEmail">
-          <Form.Control type="email" placeholder="example@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <Form.Control type="email" placeholder="example@gmail.com" id="email2" value={email} onChange={(e) => setEmail(e.target.value)} required />
         </Form.Group>
 
         <Form.Group controlId="text">
-          <Form.Control type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <Form.Control type="password" placeholder="password" id="password2" value={password} onChange={(e) => setPassword(e.target.value)} />
         </Form.Group>
-        <Button variant="outline-dark" className='my-2' type="submit">Submit</Button>
+        <Button variant="outline-dark" className='my-2' id="submit" type="submit">Submit</Button>
 
         <Form.Text className="text-dark mx-1">
           By submitting, you agree to our policy.
