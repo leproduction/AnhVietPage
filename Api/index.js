@@ -5,10 +5,14 @@ const bcrypt = require('bcrypt');
 const RegisterModel = require('./Register');
 
 const app = express();
+
+
 app.use(cors({
     origin: "https://anhviet.vercel.app",
     methods: ["POST", "GET", "OPTIONS"],
-    credentials: true
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    optionsSuccessStatus: 200 // For legacy browser support
 }));
 
 app.use(express.json());
