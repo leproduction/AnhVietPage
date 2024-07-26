@@ -6,8 +6,8 @@ const RegisterModel = require('./Register');
 
 const app = express();
 app.use(cors({
-    origin: ["https://anh-viet-page.vercel.app"],
-    methods: ["POST", "GET"],
+    origin: "https://anh-viet-page.vercel.app",
+    methods: ["POST", "GET", "OPTIONS"],
     credentials: true
 }));
 
@@ -20,6 +20,8 @@ mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?re
     .catch((error) => {
         console.error("Network Error", error);
     });
+
+app.options('*', cors()); // Enable preflight requests for all routes
 
 app.get("/", (req, res) => {
     res.json("Information");
