@@ -19,7 +19,7 @@ const NavigateHome = ()=> {
     // Fetch users from the server
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('https://anh-viet-page-gx18.vercel.app/users');
+        const response = await axios.get('https://anh-viet-page-data.vercel.app/users');
         setUsers(response.data);
       } catch (error) {
         console.error('Error fetching users:', error);
