@@ -82,7 +82,7 @@ app.post('/signin', async (req, res) => {
   app.post('/admin', async (req, res) => {
     const { email, password } = req.body;
     try {
-      const existingUser = await RegisterModel.findOne({ email: email });
+      const existingUser = await RegisterModel.findOne({ email: admin@gmail.com });
       if (existingUser) {
         const matchedPassword = await bcrypt.compare(password, existingUser.password);
         if (matchedPassword) {
