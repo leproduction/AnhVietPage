@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
-
 const bcrypt = require('bcrypt');
-
 
 const registerSchema = new mongoose.Schema({
     name: {
@@ -14,15 +12,12 @@ const registerSchema = new mongoose.Schema({
         unique: true, // Ensures email is unique in the database
         required: true,
         trim: true,
-        lowercase: true,
-
-
+        lowercase: true
     },
     tel: {
-        type: Number,
+        type: String, // Use String to accommodate phone numbers with special characters
         required: true
     },
-
     note: {
         type: String,
         trim: true
@@ -52,8 +47,6 @@ registerSchema.pre('save', async function(next) {
         next(error); // Pass the error to Mongoose to handle
     }
 });
-
-
 
 const RegisterModel = mongoose.model('Register', registerSchema);
 
