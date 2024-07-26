@@ -86,11 +86,11 @@ const logOutButton=()=>{
         <Form.Label className='text-dark'>Sign In</Form.Label>
 
         <Form.Group controlId="formEmail">
-          <Form.Control type="email" placeholder="example@gmail.com" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <Form.Control type="email" placeholder="example@gmail.com" value={email} id="email3" onChange={(e) => setEmail(e.target.value)} required />
         </Form.Group>
 
         <Form.Group controlId="text">
-          <Form.Control type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <Form.Control type="password" placeholder="password" value={password} id="password3" onChange={(e) => setPassword(e.target.value)} />
         </Form.Group>
         <Button variant="outline-dark" className='my-2' type="submit">Submit</Button>
 
