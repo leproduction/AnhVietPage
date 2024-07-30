@@ -16,7 +16,7 @@ export default function SignUpPage() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://ap-ifor-anh-viet-p-age.vercel.app/signup', {
+      const response = await axios.post('https://anhvietapi.vercel.app/signup', {
         name,
         email,
         tel,
