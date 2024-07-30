@@ -7,13 +7,13 @@ const RegisterModel = require('./Register');
 const app = express();
 
 
-app.use(cors({
-    origin: "https://anhviet.vercel.app",
-    methods: ["POST", "GET"],
-    credentials: true,
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    optionsSuccessStatus: 200 // For legacy browser support
-}));
+app.use(cors(
+    {
+        origin: ["https://anhviet.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 
 app.use(express.json());
 
