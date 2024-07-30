@@ -60,6 +60,7 @@ export default function SignUpPage() {
             <Form.Control
               type="text"
             id="text2"
+            alt="current label"
               placeholder="Full Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -70,6 +71,7 @@ export default function SignUpPage() {
             <Form.Control
               type="email"
               id="email2"
+              alt="current email"
               placeholder="example@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -80,6 +82,7 @@ export default function SignUpPage() {
             <Form.Control
               type="tel"
               phone="phone2"
+              alt="current phone"
               pattern="[0-9]{10}"
               placeholder="954-123-4567"
               value={tel}
@@ -90,7 +93,8 @@ export default function SignUpPage() {
           <Form.Group controlId="text">
             <Form.Control
               type="password"
-              id="password2"
+              id="current-password2"
+              alt="current password"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
