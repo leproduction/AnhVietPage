@@ -13,31 +13,31 @@ export default function SignUpPage() {
     axios.defaults.withCredentials = true;
   }, []);
 
-  const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://anhvietapi.vercel.app/signup', {
-        name,
-        email,
-        tel,
-        password,
-      });
+        const response = await axios.post('https://anhvietapi.vercel.app/signup', {
+            name,
+            email,
+            tel,
+            password,
+        });
 
-      if (response.status === 200) {
-        console.log("Submitted Successfully All information");
-        setInfo("Submitted Successfully");
-        setTimeout(() => {
-          navigate('/home');
-        }, 2000);
-      } else {
-        console.log("Server Error");
-        setInfo("Server Error");
-        console.log("Response:", response);
-      }
+        if (response.status === 201) { // Changed from 200 to 201 for successful creation
+            console.log("Submitted Successfully All information");
+            setInfo("Submitted Successfully");
+            setTimeout(() => {
+                navigate('/home');
+            }, 2000); // Navigate after 2 seconds
+        } else {
+            console.log("Server Error");
+            setInfo("Server Error");
+            console.log("Response:", response);
+        }
     } catch (error) {
-      console.error("Submission problems", error);
-      setInfo("Submission Problems");
+        console.error("Submission problems", error);
+        setInfo("Submission Problems");
     }
 
     // Reset form fields
@@ -45,7 +45,12 @@ export default function SignUpPage() {
     setEmail('');
     setTel('');
     setPassword('');
-  };
+};
+
+// Call handleSubmit after a 3-second delay
+setTimeout(() => {
+    handleSubmit();
+}, 3000);
 
   return (
     <Container fluid className='p-1 text-dark top-50 start-0 mx-1'>
