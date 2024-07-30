@@ -19,15 +19,15 @@ export default function LandingPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoad('Loading...');
-    try {
+
+    try { 
       const response = await axios.post('https://anhvietapi.vercel.app/submit', {
         name,
         email,
         tel,
         note
       });
-
+          setLoad('Loading...');
       if (response.status === 200) {
         console.log('Submitted Successfully All information');
         setInfo('Submitted Successfully');
