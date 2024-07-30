@@ -9,7 +9,7 @@ const app = express();
 
 app.use(cors({
     origin: "https://anhviet.vercel.app",
-    methods: ["POST", "GET", "OPTIONS"],
+    methods: ["POST", "GET"],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
     optionsSuccessStatus: 200 // For legacy browser support
@@ -25,7 +25,7 @@ mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?re
         console.error("Network Error", error);
     });
 
-app.options('*', cors()); // Enable preflight requests for all routes
+
 
 
 
