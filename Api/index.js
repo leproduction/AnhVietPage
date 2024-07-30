@@ -27,9 +27,7 @@ mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?re
 
 app.options('*', cors()); // Enable preflight requests for all routes
 
-app.get("/", (req, res) => {
-    res.json("Information");
-});
+
 
 app.post('/submit', (req, res) => {
     const { name, email, tel, note } = req.body;
