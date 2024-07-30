@@ -10,6 +10,7 @@ export default function SignUpPage() {
  const navigate=useNavigate()
   useEffect(() => {
     axios.defaults.withCredentials = true;
+      handleSubmit();
   }, []);
 
   const handleSubmit = async (e) => {
@@ -45,9 +46,7 @@ export default function SignUpPage() {
     setTel('');
     setPassword('');
   };
-  useEffect(() => {
-    handleSubmit();
-  }, []);
+
   return (
 
     <Container fluid className='p-1 text-dark top-50 start-0 mx-1'>
