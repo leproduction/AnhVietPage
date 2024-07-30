@@ -11,7 +11,7 @@ export default function LandingPage() {
   const [toggle, setToggle]= useState(true);
   const [info, setInfo]= useState("");
   const [note, setNote] = useState('')
-
+  const [load,setLoad]= useState("")
 
   useEffect(() => {
     axios.defaults.withCredentials = true;
@@ -20,7 +20,7 @@ export default function LandingPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setLoad("Loading...")
     try {
 
       const response = await axios.post('https://anhvietapi.vercel.app/submit', {
@@ -29,7 +29,7 @@ export default function LandingPage() {
         tel,
         note
       });
-
+    
       if (response.status === 200) {
 
         console.log("Submitted Successfully All information");
@@ -56,6 +56,7 @@ export default function LandingPage() {
     <Container fluid className='p-1 text-dark  top-50 start-0 mx-1'>    <Container className='mx-auto' style={{backgroundImage:`url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`}}>
 
   <br></br>
+  <Row><h1>{load}</h1></Row>
     <Row><h1>{info}</h1></Row>
       <Form onSubmit={handleSubmit} className=' p-4 rounded' variant="outline-dark mx-auton">
         <Form.Label className='text-dark'>Nếu bạn có bất kỳ câu hỏi nào, vui lòng điền thông tin chi tiết bên dưới, chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất</Form.Label>
