@@ -24,7 +24,6 @@ export default function LandingPage() {
     try {
 
       const response = await axios.post('https://ap-ifor-anh-viet-p-age.vercel.app/submit', {
-
         name,
         email,
         tel,
