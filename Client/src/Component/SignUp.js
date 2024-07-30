@@ -10,7 +10,7 @@ export default function SignUpPage() {
  const navigate=useNavigate()
   useEffect(() => {
     axios.defaults.withCredentials = true;
-      handleSubmit();
+ 
   }, []);
 
   const handleSubmit = async (e) => {
