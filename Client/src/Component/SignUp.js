@@ -7,10 +7,10 @@ import { useNavigate } from 'react-router-dom';
 
 export default function SignUpPage() {
   const { user, setUser, email, setEmail, name, setName, tel, setTel, info, setInfo, password, setPassword, toggle, setToggle } = useContext(MyContext);
- const navigate=useNavigate()
+  const navigate = useNavigate();
+
   useEffect(() => {
     axios.defaults.withCredentials = true;
- 
   }, []);
 
   const handleSubmit = async (e) => {
@@ -28,7 +28,7 @@ export default function SignUpPage() {
         console.log("Submitted Successfully All information");
         setInfo("Submitted Successfully");
         setTimeout(() => {
-          navigate('/home')
+          navigate('/home');
         }, 2000);
       } else {
         console.log("Server Error");
@@ -48,20 +48,17 @@ export default function SignUpPage() {
   };
 
   return (
-
     <Container fluid className='p-1 text-dark top-50 start-0 mx-1'>
       <Container className='mx-auto' style={{ backgroundImage: `url('https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')` }}>
         <br />
         <Row><h1>{info}</h1></Row>
-        <Form onSubmit={handleSubmit} className='p-4 rounded' variant="outline-dark mx-auton">
+        <Form onSubmit={handleSubmit} className='p-4 rounded'>
           <Form.Label className='text-dark'>
             Nếu bạn có bất kỳ câu hỏi nào, vui lòng điền thông tin chi tiết bên dưới, chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất
           </Form.Label>
           <Form.Group controlId="formName">
             <Form.Control
               type="text"
-            id="text2"
-            alt="current label"
               placeholder="Full Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -71,8 +68,6 @@ export default function SignUpPage() {
           <Form.Group controlId="formEmail">
             <Form.Control
               type="email"
-              id="email2"
-              alt="current email"
               placeholder="example@gmail.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -82,8 +77,6 @@ export default function SignUpPage() {
           <Form.Group controlId="formTel">
             <Form.Control
               type="tel"
-              phone="phone2"
-              alt="current phone"
               pattern="[0-9]{10}"
               placeholder="954-123-4567"
               value={tel}
@@ -91,17 +84,15 @@ export default function SignUpPage() {
               required
             />
           </Form.Group>
-          <Form.Group controlId="text">
+          <Form.Group controlId="formPassword">
             <Form.Control
               type="password"
-              id="current-password2"
-              alt="current password"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
-          <Button variant="outline-dark" id="submit2" className='my-2' type="submit">Submit</Button>
+          <Button variant="outline-dark" type="submit">Submit</Button>
           <Form.Text className="text-dark mx-1">
             By submitting, you agree to our policy.
           </Form.Text>
