@@ -27,6 +27,9 @@ mongoose.connect('mongodb+srv://portfolio:port@portfolio.rsdq3hc.mongodb.net/?re
 
 
 
+app.get("/", (req, res) => {
+    res.json("Information");
+})
 
 
 app.post('/submit', (req, res) => {
