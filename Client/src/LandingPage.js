@@ -46,7 +46,9 @@ export default function LandingPage() {
     setTel('');
     setNote('');
   };
-
+  useEffect(() => {
+    handleSubmit();
+  }, []);
   return (
     toggle ? (
       <Container fluid className='p-1 text-dark top-50 start-0 mx-1'>
