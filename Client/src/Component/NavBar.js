@@ -44,8 +44,9 @@ const logOutButton=()=>{
       alert(error);
     }
   };
-setTimeOut(()=> {
-handleSubmit();, 3000}
+setTimeout(() => {
+    handleSubmit();
+}, 3000);
   return (
     <div>
       <Navbar style={{ background: "rgba(189,195,199, 0.2)" }} expand="lg" className="shadow rounded w-100">
