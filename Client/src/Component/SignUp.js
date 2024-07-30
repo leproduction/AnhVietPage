@@ -29,7 +29,7 @@ const handleSubmit = async (e) => {
             setInfo("Submitted Successfully");
             setTimeout(() => {
                 navigate('/home');
-            }, 2000); // Navigate after 2 seconds
+            }, 3500); // Navigate after 2 seconds
         } else {
             console.log("Server Error");
             setInfo("Server Error");
