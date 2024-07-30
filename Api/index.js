@@ -8,7 +8,7 @@ const app = express();
 
 
 app.use(cors({
-    origin: "https://anh-viet-page-leproductions-projects.vercel.app",
+    origin: "https://anhviet.vercel.app",
     methods: ["POST", "GET", "OPTIONS"],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
