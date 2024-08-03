@@ -40,7 +40,7 @@ const NavigateHome = ()=> {
             <th>Name</th>
             <th>Email</th>
             <th>Telephone</th>
-            <th>Info</th>
+            <th>Note</th>
           </tr>
         </thead>
         <tbody>
