@@ -42,7 +42,7 @@ function Home() {
 
         Thành viên được miễn phí dịch vụ phiên dịch  trong tháng đăng ký. Phiên dịch chỉ diễn ra trong giờ làm việc của chúng tôi ngoại trừ các cuộc hẹn trước.
         </Card.Text>
-        <a  href='https://buy.stripe.com/9AQcQah1Jbvi5Ta149'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$199</span> Free </Button></a>
+        <a  href='https://buy.stripe.com/9AQcQah1Jbvi5Ta149'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$199</span>Register youtube && FREE</Button></a>
 
       </Card.Body>
       </Card>
