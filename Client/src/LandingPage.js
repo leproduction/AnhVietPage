@@ -12,10 +12,6 @@ export default function LandingPage() {
   const [note, setNote] = useState('');
   const [load, setLoad] = useState('');
 
-  useEffect(() => {
-    axios.defaults.withCredentials = true;
-     handleSubmit();
-  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,6 +43,11 @@ export default function LandingPage() {
     setTel('');
     setNote('');
   };
+    useEffect(() => {
+    axios.defaults.withCredentials = true;
+     handleSubmit();
+  }, []);
+
 
   return (
     toggle ? (
