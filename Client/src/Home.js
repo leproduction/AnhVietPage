@@ -30,7 +30,7 @@ function Home() {
 <li>Thuê nhà</li>
 <li>Du lịch</li>
 <li>Hoàn tiền, Trả lại, Khiếu nại</li>
-<li>Tạo trang Websites, ứng dụng APPS, dịch vụ ATM, nhà cung cấp thẻ tín dụng</li></ol>
+<li>Tạo trang Websites, ứng dụng APPS, dịch vụ ATM, nhà cung cấp thẻ tín dụng</li>
   <li>và các dịch vụ khác</li></ol>
       </Row>
 
