@@ -30,7 +30,8 @@ function Home() {
 <li>Thuê nhà</li>
 <li>Du lịch</li>
 <li>Hoàn tiền, Trả lại, Khiếu nại</li>
-<li>và các dịch vụ khác</li></ol>
+<li>Tạo trang Websites, ứng dụng APPS, dịch vụ ATM, nhà cung cấp thẻ tín dụng</li></ol>
+  <li>và các dịch vụ khác</li></ol>
       </Row>
 
       <Row style={{ background: 'rgba(189,195,199, 0.3)' }} sm={1} md={1} className=" shadow mx-0 d-flex justify-content-start align-items-center rounded p-3 gap-1">
