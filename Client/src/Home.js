@@ -43,7 +43,7 @@ function Home() {
 
         Thành viên được miễn phí dịch vụ phiên dịch  trong tháng đăng ký. Phiên dịch chỉ diễn ra trong giờ làm việc của chúng tôi ngoại trừ các cuộc hẹn trước.
         </Card.Text>
-        <a  href='https://www.youtube.com/channel/UCi18RgjbR65q_wI-T4jm-Bw'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$199</span> Đăng ký youtube & FREE </Button></a>
+        <a  href='https://www.youtube.com/channel/UCi18RgjbR65q_wI-T4jm-Bw'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$199</span> FREE </Button></a>
 
       </Card.Body>
       </Card>
