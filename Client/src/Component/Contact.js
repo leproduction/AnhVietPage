@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import {Container, Row, Col } from 'react-bootstrap';
 const contact = [ {
 
-    phone: "954-842-9190",
+    phone: "754-444-6941",
     email: "goigiupvietusa@gmail.com"
 
 }]
