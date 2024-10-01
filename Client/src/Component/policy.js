@@ -1,4 +1,12 @@
-User Data Information and Error Policy for Interpretation Services
+import React from 'react'
+
+export default function policy() {
+  return (
+    <div>
+
+
+<h1>User Data Information and Error Policy for Interpretation Services</h1>
+<p>
 1. Introduction
 At Anh Viet Web App Meta , we value the privacy and security of our users’ personal information and are committed to providing clear communication regarding how user data is managed. This policy outlines how we handle user data and address potential errors during the use of our interpretation services.
 2. Data Collection and Use
@@ -54,5 +62,9 @@ For questions or concerns regarding this policy or user data, please contact us 
 Email: goigiupvietusa@gmail.com	
 Phone: 754-444-6941
 Users agree to this policy regarding data collection, security, and error handling by using our interpretation services.
+  </p>
+</div>
+  )
+}
 
 
