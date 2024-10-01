@@ -67,7 +67,7 @@ setTimeout(() => {
             <Nav className="me-auto">
               <NavDropdown title="Menu" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#">Home</NavDropdown.Item>
-              <NavDropdown.Item>  <Link to="/policy" className="text-decoration-none">About </Link></NavDropdown.Item>
+              <NavDropdown.Item>  <Link to="/policy" className="text-decoration-none text-black">About </Link></NavDropdown.Item>
                 <NavDropdown.Item href="#footer">Contact</NavDropdown.Item>
                 <NavDropdown.Item href="#">Career</NavDropdown.Item>
 
