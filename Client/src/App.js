@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import NoPages from './NoPage';
 import DownloadLinkPage from './DownloadPage';
-
+import PolicyPage from './Component/Policy';
 import AdminManagementPage from './Component/adminManagement';
 import BackEnd from './Component/backend';
 import SignUpPage from './Component/SignUp';
@@ -19,7 +19,7 @@ const App = () => {
           <Route  path="/home" element={<Home />} />
           <Route  path="/download" element={<DownloadLinkPage />} />
           <Route  path="*" element={<NoPages />} />
-
+         <Route  path="/policy" element={<PolicyPage/>} />
           <Route  path="/management" element={<AdminManagementPage />} />
           <Route  path="/backend" element={<BackEnd />} />
           <Route path="/Signup" element={<SignUpPage/>}/>
