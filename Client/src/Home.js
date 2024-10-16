@@ -34,6 +34,7 @@ function Home() {
   <li>và các dịch vụ khác</li></ol>
       </Row>
  <ContactEmer />
+  <ProgressiveBar />
       <Row style={{ background: 'rgba(189,195,199, 0.3)' }} sm={1} md={1} className=" shadow mx-0 d-flex justify-content-start align-items-center rounded p-3 gap-1">
      <Card style={{ width: '18rem' }} className='mx-auto p-1'>
       <Card.Img variant="top" src="https://images.pexels.com/photos/6346795/pexels-photo-6346795.jpeg?auto=compress&cs=tinysrgb&w=400"/>
@@ -78,7 +79,7 @@ function Home() {
 
       </Container>
 
-      <ProgressiveBar />
+      
 
       
     
