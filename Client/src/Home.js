@@ -80,8 +80,8 @@ function Home() {
 
       <ProgressiveBar />
 
-
-      <LandingPage/>
+       <ContactEmer />
+    
       <ReviewPage/>
 
 
@@ -110,9 +110,9 @@ function Home() {
     <Container fluid className='p-2 shadow'>
 
 </Container>
-  <ContactEmer />
+  
        <FooterPage />
-
+  <LandingPage/>
     </Container>
   );
 }
