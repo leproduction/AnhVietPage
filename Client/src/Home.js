@@ -111,9 +111,9 @@ function Home() {
     <Container fluid className='p-2 shadow'>
 
 </Container>
-  
-       <FooterPage />
   <LandingPage/>
+       <FooterPage />
+  
     </Container>
   );
 }
