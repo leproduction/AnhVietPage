@@ -65,6 +65,7 @@ export default function LandingPage() {
           <Row><h1>{info}</h1></Row>
           <Form onSubmit={handleSubmit} className='p-4 rounded' variant='outline-dark mx-auto'>
             <Form.Label className='text-dark'>Nếu bạn có bất kỳ câu hỏi nào, vui lòng điền thông tin chi tiết bên dưới, chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất</Form.Label>
+          <Form.label clasName='text-danger'>Tùy chọn liên hệ hiện đang được bảo trì. Vui lòng gọi điện hoặc nhắn tin cho chúng tôi nếu bạn cần bất kỳ trợ giúp nào</Form.label>
             <Form.Group controlId='formName'>
               <Form.Control
                 type='text'
