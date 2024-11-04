@@ -49,7 +49,7 @@ export default function ProgressiveBar() {
         {/* Corrected attribute name onSubmit */}
         <Form onSubmit={handleSubmit}>
           <Row align="center" className='mx-auto'>
-            <small><h5>Chúng tôi có chiến dịch từ thiện “Người Việt thân yêu” giúp nhiều người Việt được phiên dịch miễn phí. Mục tiêu của chúng tôi là $70K/năm; với sự giúp đỡ của bạn, ngày càng có nhiều việc làm được tạo ra cho người Việt.</h5></small>
+            <small><h5>Chúng tôi có chiến dịch từ thiện “Người Việt thân yêu” giúp nhiều người Việt được phiên dịch miễn phí. Với sự giúp đỡ của bạn, ngày càng có nhiều việc làm được tạo ra cho người Việt.</h5></small>
             <Row><Col className='d-flex justify-content-start'>$5</Col><Col className='d-flex justify-content-end'></Col></Row>
             <ProgressBar now={5} animated variant='secondary' />
             {/* Corrected onClick handler to use a function that calls addToCart */}
