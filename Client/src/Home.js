@@ -35,31 +35,8 @@ function Home() {
       </Row>
  <ContactEmer />
   <ProgressiveBar />
+  
       <Row style={{ background: 'rgba(189,195,199, 0.3)' }} sm={1} md={1} className=" shadow mx-0 d-flex justify-content-start align-items-center rounded p-3 gap-1">
-     <Card style={{ width: '18rem' }} className='mx-auto p-1'>
-      <Card.Img variant="top" src="https://images.pexels.com/photos/6346795/pexels-photo-6346795.jpeg?auto=compress&cs=tinysrgb&w=400"/>
-      <Card.Body>
-        <Card.Title> 1 Tháng Thành Viên </Card.Title>
-        <Card.Text>
-
-        Thành viên được miễn phí dịch vụ phiên dịch  trong tháng đăng ký. Phiên dịch chỉ diễn ra trong giờ làm việc của chúng tôi ngoại trừ các cuộc hẹn trước.
-        </Card.Text>
-        <a  href='https://www.youtube.com/channel/UCi18RgjbR65q_wI-T4jm-Bw'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$199</span> FREE </Button></a>
-
-      </Card.Body>
-      </Card>
-      <Card style={{ width: '18rem' }} className='mx-auto p-1'>
-      <Card.Img variant="top" src="https://images.pexels.com/photos/6531913/pexels-photo-6531913.jpeg?auto=compress&cs=tinysrgb&w=400" />
-      <Card.Body>
-        <Card.Title> 6 Tháng Thành Viên </Card.Title>
-        <Card.Text>
-        Thành viên được nhận dịch vụ phiên dịch miễn phí với số phút và giờ không giới hạn trong thời gian đăng ký 6 tháng. Phiên dịch chỉ diễn ra trong giờ làm việc của chúng tôi ngoại trừ các cuộc hẹn trước
-        </Card.Text>
-
-        <a href='https://buy.stripe.com/fZe8zU8vd6aYftKaEH'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$599</span> $399</Button></a>
-
-      </Card.Body>
-      </Card>
       <Card style={{ width: '18rem' }} className='mx-auto p-1'>
       <Card.Img variant="top" src="https://images.pexels.com/photos/14021260/pexels-photo-14021260.jpeg?auto=compress&cs=tinysrgb&w=400" />
       <Card.Body>
@@ -67,7 +44,7 @@ function Home() {
         <Card.Text>
         Thành viên được nhận dịch vụ phiên dịch miễn phí với số phút và giờ không giới hạn trong thời gian đăng ký 1 năm. Phiên dịch chỉ diễn ra trong giờ làm việc của chúng tôi ngoại trừ các cuộc hẹn trước.
         </Card.Text>
-        <a href='https://buy.stripe.com/aEUaI26n5are0yQbIK'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$1200</span>$899</Button></a>
+        <a href='https://buy.stripe.com/4gweYi26PdDqdlC004'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$1200</span>$99</Button></a>
       </Card.Body>
       </Card>
 
