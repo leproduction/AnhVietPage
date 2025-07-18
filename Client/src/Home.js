@@ -20,18 +20,19 @@ function Home() {
         <NavBarComponent />
       </Row>
       <Row>
-        <ol>
-          <label>Phiên dịch tiếng Anh sang tiếng Việt và tiếng Việt sang tiếng Anh</label>
-          <li>Cuộc hẹn với bác sĩ</li>
-<li>Cuộc hẹn luật sư</li>
-<li>Tuyển sinh vào trường</li>
+        <h2>RM-Style Custom Straps – Premium Quality for All Watches</h2>
+  <p>Upgrade your watch with our high-quality RM-style straps, <strong>custom-made to fit all branded and unbranded watches</strong>. Whether you're enhancing a luxury timepiece or elevating a daily wear watch, these straps deliver both style and durability.</p>
 
-<li>Phiên dịch Các tài liệu</li>
-<li>Thuê nhà</li>
-<li>Du lịch</li>
-<li>Hoàn tiền, Trả lại, Khiếu nại</li>
-<li>Tạo trang Websites, ứng dụng Apps, dịch vụ ATM, nhà cung cấp thẻ tín dụng</li>
-  <li>và các dịch vụ khác</li></ol>
+  <ul>
+    <li><strong>Custom Fit:</strong> Made-to-order for your specific watch model and lug size.</li>
+    <li><strong>Premium Materials:</strong> Inspired by Richard Mille aesthetics – durable, lightweight, and built for comfort.</li>
+    <li><strong>Production Lead Time:</strong> 4–6 business days.</li>
+    <li><strong>Shipping:</strong> Standard international shipping (30 days).</li>
+    <li><strong>No Returns or Refunds:</strong> All sales are final, including straps with cosmetic defects. Please double-check sizing and specifications before ordering.</li>
+  </ul>
+
+  <p>Have questions? <strong>Contact us</strong> before placing your order — we're happy to assist.</p>
+
       </Row>
  <ContactEmer />
   <ProgressiveBar />
