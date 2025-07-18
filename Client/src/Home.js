@@ -45,7 +45,7 @@ function Home() {
         <Card.Text>
        Check out to Expedite Strap Making Process
         </Card.Text>
-        <a href='https://buy.stripe.com/dRmcN54BbgTFcsI3sX53O08'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$1200</span>$99</Button></a>
+        <a href='https://buy.stripe.com/dRmcN54BbgTFcsI3sX53O08'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$250</span>$189</Button></a>
       </Card.Body>
       </Card>
 
