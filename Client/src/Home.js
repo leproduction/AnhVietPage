@@ -43,9 +43,9 @@ function Home() {
       <Card.Body>
         <Card.Title> 1 năm  Thành Viên </Card.Title>
         <Card.Text>
-        Thành viên được nhận dịch vụ phiên dịch miễn phí với số phút và giờ không giới hạn trong thời gian đăng ký 1 năm. Phiên dịch chỉ diễn ra trong giờ làm việc của chúng tôi ngoại trừ các cuộc hẹn trước.
+       Check out to Expedite Strap Making Process
         </Card.Text>
-        <a href='https://buy.stripe.com/4gweYi26PdDqdlC004'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$1200</span>$99</Button></a>
+        <a href='https://buy.stripe.com/dRmcN54BbgTFcsI3sX53O08'><Button variant="primary"><span style={{ textDecoration: 'line-through' }} className='bg-dark'>$1200</span>$99</Button></a>
       </Card.Body>
       </Card>
 
