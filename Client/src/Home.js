@@ -34,8 +34,7 @@ function Home() {
   <p>Have questions? <strong>Contact us</strong> before placing your order — we're happy to assist.</p>
 
       </Row>
- <ContactEmer />
-  <ProgressiveBar />
+
   
       <Row style={{ background: 'rgba(189,195,199, 0.3)' }} sm={1} md={1} className=" shadow mx-0 d-flex justify-content-start align-items-center rounded p-3 gap-1">
       <Card style={{ width: '18rem' }} className='mx-auto p-1'>
@@ -90,6 +89,8 @@ function Home() {
 
 </Container>
   <LandingPage/>
+   <ContactEmer />
+  <ProgressiveBar />
        <FooterPage />
   
     </Container>
