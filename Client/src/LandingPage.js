@@ -65,7 +65,7 @@ export default function LandingPage() {
           <Row><h1>{info}</h1></Row>
           <Form onSubmit={handleSubmit} className='p-4 rounded' variant='outline-dark mx-auto'>
             <Form.Label className='text-dark'>Feel Free to Contact us if You Have any Questions</Form.Label>
-          <Form.Label className='text-danger'>Our website is under maintenance</Form.Label>
+          <Form.Label className='text-danger'>.</Form.Label>
             <Form.Group controlId='formName'>
               <Form.Control
                 type='text'
