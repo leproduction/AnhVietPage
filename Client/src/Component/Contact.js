@@ -17,7 +17,7 @@ export default function ContactEmer() {
             <Col ><a className='text-decoration-none' href="tel:754-444-6941"><p className='text-black'>{mycontact.phone}</p></a>
             </Col>
 
-            <Col><a className='text-decoration-none' href="mailto:goigiupvietusa@gmail.com"><p className='text-dark'>{mycontact.email}</p></a>
+            <Col><a className='text-decoration-none' href="rmstraps2025@gmail.com"><p className='text-dark'>{mycontact.email}</p></a>
             </Col>
         </Row>))}
     </Container>
