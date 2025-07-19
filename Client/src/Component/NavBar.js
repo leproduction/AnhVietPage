@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Navbar, Nav, NavDropdown, Container, Image, Row, Col, Button, Modal, Form, Alert } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Nails from './Logo.png';
+import Nails from './logo.png';
 import { MyContext } from './MyContext';
 
 import { Link, useNavigate } from 'react-router-dom';
