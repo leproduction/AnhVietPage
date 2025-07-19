@@ -5,7 +5,7 @@ import {Container, Row, Col } from 'react-bootstrap';
 const contact = [ {
 
     phone: "754-444-6941",
-    email: "goigiupvietusa@gmail.com"
+    email: "rmstraps@gmail.com"
 
 }]
 export default function ContactEmer() {
