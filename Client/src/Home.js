@@ -41,7 +41,7 @@ function Home() {
       <Card style={{ width: '18rem' }} className='mx-auto p-1'>
       <Card.Img variant="top" src="https://images.pexels.com/photos/14021260/pexels-photo-14021260.jpeg?auto=compress&cs=tinysrgb&w=400" />
       <Card.Body>
-        <Card.Title> 1 năm  Thành Viên </Card.Title>
+        <Card.Title> RM Velcro/SailCloth Strap </Card.Title>
         <Card.Text>
        Check out to Expedite Strap Making Process
         </Card.Text>
