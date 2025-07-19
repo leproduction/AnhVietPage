@@ -6,28 +6,42 @@ const  ReviewPage = () => {
 
 
  const random = [
-   { id: 1,
+  {
+    id: 1,
     author: "Oscar Wilde",
-    quote: "Ngay từ thời điểm bạn hợp tác với Anh Việt, sự chuyên nghiệp của đội ngũ họ đã được thể hiện rõ ràng. Các phiên dịch viên không chỉ thông thạo ngôn ngữ của họ mà còn thông thạo các sắc thái văn hóa, điều này rất quan trọng để phiên dịch chính xác. Họ cư xử hết sức lịch sự, đảm bảo rằng tất cả các bên đều được tôn trọng trong suốt cuộc trò chuyện."
-   , background: 'bg-red-500',
-   imageAddress: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400"
-   },
-   { id: 2,
-     author: "Rivera Gomet",
-     quote: "Một trong những điểm mạnh nhất của Anh Việt là sự chính xác trong cách diễn giải của họ. Cho dù đó là đàm phán kinh doanh, tư vấn y tế hay thảo luận pháp lý, phiên dịch viên của họ đều đảm bảo rằng mọi từ đều được dịch chính xác, duy trì ý nghĩa và giọng điệu ban đầu. Độ chính xác này rất quan trọng để giao tiếp hiệu quả và đã giúp tôi tránh được những hiểu lầm tiềm ẩn trong tương tác của mình."
-     , background: 'bg-gray-500',
-     imageAddress:"https://images.pexels.com/photos/2218786/pexels-photo-2218786.jpeg?auto=compress&cs=tinysrgb&w=400"
-   }, {
-     id: 3,
-     author:"Amanda Colden",
-     quote: "Anh Việt cung cấp đa dạng các dịch vụ phiên dịch, bao gồm phiên dịch đồng thời, liên tiếp và qua điện thoại. Tính linh hoạt này khiến họ trở thành nhà cung cấp phù hợp cho nhiều tình huống khác nhau, cho dù đó là phiên dịch tại chỗ hay cuộc họp từ xa. Khả năng thích ứng của họ với các tình huống khác nhau rất đáng khen ngợi và đánh giá cao."
-     ,imageAddress:"https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=400"
-   }, {id: 4,
-     author:"Beatriz Lalipa",
-   quote: "Đội ngũ tại Anh Việt luôn sẵn sàng hỗ trợ mọi thắc mắc hoặc yêu cầu đặc biệt. Họ phản ứng nhanh và có sức chứa, đảm bảo đáp ứng các nhu cầu cụ thể của khách hàng. Sự sẵn lòng nỗ lực nhiều hơn nữa trong lĩnh vực dịch vụ khách hàng của họ được thể hiện rõ qua cách tiếp cận được cá nhân hóa và sự dễ dàng trong việc xử lý các yêu cầu khẩn cấp của họ."
-   , background: 'bg-purple-500',
-   imageAddress:"https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=400"
- }];
+    quote:
+      "From the moment I placed my order with RM Straps, their professionalism was clear. The strap was crafted with precision, made from high-quality material, and fit my watch perfectly. Their customer service was polite and attentive, making the entire experience smooth and reliable.",
+    background: "bg-red-500",
+    imageAddress:
+      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400",
+  },
+  {
+    id: 2,
+    author: "Rivera Gomet",
+    quote:
+      "One of the strongest points of RM Straps is their attention to detail and quality. From the stitching to the material, every aspect of the strap was excellent. I’ve worn it daily and it still looks brand new. Definitely worth every dollar!",
+    background: "bg-gray-500",
+    imageAddress:
+      "https://images.pexels.com/photos/2218786/pexels-photo-2218786.jpeg?auto=compress&cs=tinysrgb&w=400",
+  },
+  {
+    id: 3,
+    author: "Amanda Colden",
+    quote:
+      "RM Straps offers a wide variety of watch straps, including sailcloth, nylon, and leather. This gave me the flexibility to choose the right one for each of my watches. Their ability to adapt to different needs is truly impressive.",
+    imageAddress:
+      "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=400",
+  },
+  {
+    id: 4,
+    author: "Beatriz Lalipa",
+    quote:
+      "The team at RM Straps is always ready to assist with any questions or special requests. Their response time is fast and they go the extra mile to meet customer needs. Their personalized service and ability to handle urgent orders really stand out.",
+    background: "bg-purple-500",
+    imageAddress:
+      "https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=400",
+  },
+];
  const [currentReview, setCurrentReview] = useState(random[0])
  const [isVisible, setIsVisible] = useState(true);
 
