@@ -90,7 +90,7 @@ function Home() {
 </Container>
   <LandingPage/>
    <ContactEmer />
-  <ProgressiveBar />
+
        <FooterPage />
   
     </Container>
