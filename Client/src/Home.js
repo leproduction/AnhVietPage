@@ -63,28 +63,7 @@ function Home() {
       <ReviewPage/>
 
 
-    <Container fluid className='p-2 shadow d-flex justify-content-center align-items-center text-center'>
 
-     <Row sm={1} md={1} className='mx-auto'>
-      <Row className='col-md-12'><Col> Business Hours </Col></Row>
-
-      <Row className='col-md-12'><Col>Monday	</Col><Col>By Appoinment</Col></Row>
-      <Row className='col-md-12'><Col>Tuesday</Col><Col>By Appoinment</Col>
-
-
-
-
-
-</Row>
-
-      <Row className='col-md-12'><Col>Wednesday</Col><Col>By Appoinment</Col></Row>
-      <Row className='col-md-12'><Col>Thursday</Col>	<Col>By Appoinment</Col></Row>
-      <Row className='col-md-12'><Col>Friday	</Col><Col>By Appoinment</Col></Row>
-
-      <Row className='col-md-12'><Col>Saturday</Col>	<Col>By Appoinment</Col></Row>
-      <Row className='col-md-12'><Col>Sunday	</Col><Col>By Appoinment</Col></Row>
-     </Row >
-</Container>
     <Container fluid className='p-2 shadow'>
 
 </Container>
