@@ -12,6 +12,7 @@ import LandingPage from './LandingPage.js';
 import ReviewPage from './Component/Review.js';
 import Photos from './Component/NailsSearch.js';
 import PeopleCount from './Component/PeopleCount.js';
+import PicOne from './pic1.JPG';
 function Home() {
 
   return (
@@ -38,7 +39,7 @@ function Home() {
   
       <Row style={{ background: 'rgba(189,195,199, 0.3)' }} sm={1} md={1} className=" shadow mx-0 d-flex justify-content-start align-items-center rounded p-3 gap-1">
       <Card style={{ width: '18rem' }} className='mx-auto p-1'>
-      <Card.Img variant="top" src="https://images.pexels.com/photos/14021260/pexels-photo-14021260.jpeg?auto=compress&cs=tinysrgb&w=400" />
+      <Card.Img variant="top" src={PicOne} />
       <Card.Body>
         <Card.Title> RM Velcro/SailCloth Strap </Card.Title>
         <Card.Text>
